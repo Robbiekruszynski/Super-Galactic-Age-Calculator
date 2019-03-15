@@ -13,8 +13,8 @@ $(document).ready(function() {
     let year = $("#year").val();
     let day = $("#date").val();
     let month = $("#month").val();
-    let birthday =  month.conact( " ", day, ", "," year, ");
-    
+    let birthday =  year.concat( "-", month, "-", day);
+
     let yourBirthday = new Birthtime(birthday);
     let yourNumber = Math.round(yourBirthday.findAge());
 
@@ -22,6 +22,7 @@ $(document).ready(function() {
 
     $("#field").append("<li> Your age on Earth" + yourNumber + "</li>");
     console.log(yourNumber);
+    console.log("hi");
 
   });
 });
