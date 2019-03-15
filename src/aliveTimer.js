@@ -1,18 +1,17 @@
-export class Birthtime {
+export class AgeCalc {
 
-  constructor(birthtime){
-    this.birthtime = birthtime;
+  constructor(birthday){
+    this.birthday = birthday;
   }
 
   findAge() {
     let today = new Date();
-    let birthday = new Date(this.birthtime);
+    let birthday = new Date(this.birthday);
     let age = today.getFullYear() - birthday.getFullYear();
     let m = today.getMonth() - birthday.getMonth();
     if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
       age--;
     }
     return age;
-  }
-  // console.log('your age: ' + getAge("1989/04/27"));
+    }
 }

@@ -1,31 +1,31 @@
-export class EarthTimer {
+export class Old {
 
-    constructor(earthtimer) {
-      this.earthtimer = earthtimer;
+    constructor(old) {
+      this.old= old;
     }
 
-    inSeconds(earthtimer) {
-      let earthtimeInSeconds = earthtimer * 31536000
-      return earthtimeInSeconds;
+    inSeconds(old) {
+      let oldInSeconds = old * 31536000
+      return oldInSeconds;
     }
 
-    aliveOnMercury(earthtimer) {
-      let mercuryAlive = earthtimer / 0.24;
+    aliveOnMercury(old) {
+      let mercuryAlive = old / 0.24;
       return Math.round(mercuryAlive);
     }
 
-    aliveOnVenus(earthtimer) {
-      let venusAlive = earthtimer / 0.62;
+    aliveOnVenus(old) {
+      let venusAlive = old / 0.62;
       return Math.round(venusAlive);
     }
 
-    aliveOnMars(earthtimer) {
-      let marsAlive = earthtimer * 1.88;
+    aliveOnMars(old) {
+      let marsAlive = old / 1.88;
       return Math.round(marsAlive);
     }
 
-    aliveOnJupiter(earthtimer) {
-      let jupiterAlive = earthtimer * 11.86;
+    aliveOnJupiter(old) {
+      let jupiterAlive = old / 11.86;
       return Math.round(jupiterAlive);
 
     }

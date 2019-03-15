@@ -1,28 +1,33 @@
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/scss/bootstrap.scss';
-import { Birthtime } from "./aliveTimer.js";
-import { AliveTimer } from "./planetAge.js";
+import { AgeCalc } from "./aliveTimer.js";
+import { Old } from "./planetAge.js";
 import './sass/styles.scss';
 
 
 $(document).ready(function() {
-  $('#space-form').submit(function(event) {
+  $('#spaceForm').submit(function(event) {
     event.preventDefault();
     $("#field").empty();
     let year = $("#year").val();
-    let day = $("#date").val();
     let month = $("#month").val();
-    let birthday = `$("#year")-$("#month")-$("#day")`
+    let day = $("#day").val();
+    let birthday = year.concat(month, day);
 
-    let yourBirthday = new Birthtime(birthday);
-    let yourNumber = Math.round(yourBirthday.findAge());
+    let yourBirthday = new Old(birthday);
+    let yourAge = Math.round(yourBirthday.findAge());
+    let homeAge = new AgeCalc(yourAge);
+    let mercuryAge = Math.round(homeAge.mercuryAlive(yourAge));
+    let venusAge = Math.round(homeAge.venusAlive(yourAge));
+    let marsAge = Math.round(homeAge.marsAlive(yourAge));
+    let jupiterAge = Math.round(homeAge.jupiterAlive(yourAge));
 
 
 
-    $("#field").append("<li> Your age on Earth" + yourNumber + "</li>");
-    console.log(yourNumber);
-    console.log("hi");
+    $("#field").html("<li> Your age on Earth" + yourAge + "</li>");
+    // console.log(yourAge);
+    // console.log("hi");
 
   });
 });
