@@ -13,7 +13,7 @@ $(document).ready(function() {
     let year = $("#year").val();
     let day = $("#date").val();
     let month = $("#month").val();
-    let birthday =  year.concat( "-", month, "-", day);
+    let birthday = `$("#year")-$("#month")-$("#day")`
 
     let yourBirthday = new Birthtime(birthday);
     let yourNumber = Math.round(yourBirthday.findAge());
