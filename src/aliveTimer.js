@@ -1,4 +1,4 @@
-export class yourBirthday {
+export class YourBirthday {
 
   constructor(birthday){
     this.birthday = birthday;
@@ -14,11 +14,5 @@ export class yourBirthday {
     }
     return age;
   }
-  console.log('your age: ' + getAge("1989/04/27"));
+  // console.log('your age: ' + getAge("1989/04/27"));
 }
-
-
-age / .24 = Mercury
-age / .62 = venus
-age / 1.88 = mars
-age / 11.86 = jupiter
