@@ -29,4 +29,34 @@ export class Old {
       return (jupiterAlive);
 
     }
+
+    expectedEarth(old){
+      let timeLeft = 90 - old;
+      return timeleft;
+    }
+
+    expectedMercury(old){
+      let timeLeft =  new Old(old);
+      let onMercury = timeLeft.mercuryAlive(90) - timeLeft.mercuryAlive(old);
+      return Math.round(expectedMercury);
+    }
+
+    expectedVenus(old){
+      let timeLeft = new Old(old);
+      let onVenus = timeLeft.venusAlive(90) - timeLeft.venusAlive(old);
+      return Math.round(expectedVenus);
+    }
+
+    expectedMars(old){
+      let timeLeft = new Old(old);
+      let onMars = timeLeft.marsAlive(90) - timeLeft.marsAlive(old);
+      return Math.round(expectedMars);
+    }
+    
+    expectedJupiter(old){
+    let timeLeft = new Old(old);
+    let onJupiter = timeLeft.jupiterAlive(90) - timeLeft.jupiterAlive(old);
+      return Math.round(expectedJupiter);
+    }
+
 }

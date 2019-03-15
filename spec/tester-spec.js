@@ -1,8 +1,8 @@
-import { Old  } from './../src/planetAge.js';
+import { Old } from './../src/planetAge.js';
 import { AgeCalc  } from'./../src/aliveTimer.js';
 
 
-  describe('AgeCalc', function(){
+  describe('Old', function(){
 
   it('should return the correct age for the user on earth after they complete the form', function() {
     let birthday = new AgeCalc("914,544,000");

@@ -26,26 +26,10 @@ $(document).ready(function() {
 
 
 
-    $("#field").append("<li> Your age on Earth " + yourAge + "</li>");
-    $("#field").append("<li> Your age on Mercury " + mercuryAge + "</li>");
-    $("#field").append("<li> Your age on Venus " + venusAge + "</li>");
-    $("#field").append("<li> Your age on Mars " + marsAge + "</li>");
-    $("#field").append("<li> Your age on Jupiter " + jupiterAge + "</li>");
-    console.log(yourAge);
-    console.log("hi");
-
+    $("#field").append("<li> On Earth you're " + yourAge + "years old</li>");
+    $("#field").append("<li> On Mercury you're " + mercuryAge + "years old</li>");
+    $("#field").append("<li> On Venus you're " + venusAge + "years old</li>");
+    $("#field").append("<li> On Mars you're " + marsAge + "years old</li>");
+    $("#field").append("<li> On Jupiter you're " + jupiterAge + "years old</li>");
   });
 });
-
-
-
-
-
-
-//
-// $funtion() {
-//   $'#mercuryAge'.submit(function(event)) {
-//     event.preventDefault();
-//     let ageYear = $('a')
-//   }
-// }

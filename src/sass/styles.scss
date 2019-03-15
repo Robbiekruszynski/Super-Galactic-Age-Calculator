@@ -2,7 +2,7 @@ body {
   background-color: darkgrey;
 }
 h1 {
-  color: red;
+  color: black;
 }
 
 .formGrouping{
@@ -20,5 +20,14 @@ h1 {
 }
 
 .button {
+  margin-top: 10px;
   margin-left: 27vw;
+}
+
+ul{
+  margin-top: 10px;
+text-align: center;
+list-style-type: none;
+
+
 }
