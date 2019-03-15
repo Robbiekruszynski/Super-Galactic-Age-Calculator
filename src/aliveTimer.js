@@ -1,15 +1,15 @@
-export class YourBirthday {
+export class Birthtime {
 
-  constructor(birthday){
-    this.birthday = birthday;
+  constructor(birthtime){
+    this.birthtime = birthtime;
   }
 
   findAge() {
     let today = new Date();
-    let birthday = newDate (this.birthday);
+    let birthday = new Date(this.birthtime);
     let age = today.getFullYear() - birthday.getFullYear();
-    let m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    let m = today.getMonth() - birthday.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
       age--;
     }
     return age;

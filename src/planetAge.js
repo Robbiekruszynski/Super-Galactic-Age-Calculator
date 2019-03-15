@@ -3,7 +3,7 @@ export class AliveTimer {
     constructor(alivetimer) {
       this.alivetimer = alivetimer;
     }
-    
+
     inSeconds(alivetimer) {
       let alivetimeInSeconds = alivetimer * 31536000
       return alivetimeInSeconds;
@@ -20,13 +20,13 @@ export class AliveTimer {
     }
 
     aliveOnMars(alivetimer) {
-      let marsAlive = alivetimer / 1.88;
+      let marsAlive = alivetimer * 1.88;
       return Math.round(marsAlive);
     }
 
     aliveOnJupiter(alivetimer) {
-      let jupiterAlive = alivetimer / 11.86;
-      return Math.round(alivetime);
+      let jupiterAlive = alivetimer * 11.86;
+      return Math.round(jupiterAlive);
 
     }
 }
