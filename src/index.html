@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script type="text/javascript" src="bundle.js"></script>
-  <title>webpack-template-v5</title>
+  <title>Super-Galactic-Age-Calculator</title>
 </head>
-<body>
-  <h1>Hello World</h1>
-</body>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Galactic Age Calculator</h1>
+      </div>
+        <p> Dear creature, please enter your informtaion as example below shows...<br>
+            YYYY/MM/DD<br>
+            1989/04/27</p>
+      <form id="space-form">
+        <div class ="form">
+        <label for="name">Enter your name:</label>
+        <input id="name" type="string"> <br> <br>
+        <input id="age" class="formInfo" required> <br> <br>
+        <p>Select your planet</p>
+             <select name="planetForm">
+               <option></option>
+               <option id="mercury">Mercury</option>
+               <option id="venus">Venus</option>
+               <option id="mars">Mars</option>
+               <option id="jupiter">Jupiter</option>
+             </select> <br> <br>
+        <button class="button" type="submit">Submit</button>
+      </form>
+      <ul id="field"></ul>
+    </div>
+  </body>
 </html>
