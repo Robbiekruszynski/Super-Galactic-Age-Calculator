@@ -11,22 +11,22 @@ export class Old {
 
     aliveOnMercury(old) {
       const mercuryAlive = old / 0.24;
-      return Math.round(mercuryAlive);
+      return (mercuryAlive);
     }
 
     aliveOnVenus(old) {
       const venusAlive = old / 0.62;
-      return Math.round(venusAlive);
+      return (venusAlive);
     }
 
     aliveOnMars(old) {
       const marsAlive = old / 1.88;
-      return Math.round(marsAlive);
+      return (marsAlive);
     }
 
     aliveOnJupiter(old) {
     const jupiterAlive = old / 11.86;
-      return Math.round(jupiterAlive);
+      return (jupiterAlive);
 
     }
 }
