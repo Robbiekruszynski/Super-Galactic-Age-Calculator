@@ -30,33 +30,33 @@ export class Old {
 
     }
 
-    expectedEarth(old){
-      let timeLeft = 90 - old;
-      return timeleft;
-    }
+    // expectedEarth(old){
+    //   let timeLeft = 90 - old;
+    //   return timeleft;
+    // }
 
     expectedMercury(old){
       let timeLeft =  new Old(old);
-      let onMercury = timeLeft.mercuryAlive(90) - timeLeft.mercuryAlive(old);
-      return Math.round(expectedMercury);
+      let onMercury = timeLeft.aliveOnMercury(90) - timeLeft.aliveOnMercury(old);
+      return Math.round(onMercury);
     }
 
     expectedVenus(old){
       let timeLeft = new Old(old);
-      let onVenus = timeLeft.venusAlive(90) - timeLeft.venusAlive(old);
-      return Math.round(expectedVenus);
+      let onVenus = timeLeft.aliveOnVenus(90) - timeLeft.aliveOnVenus(old);
+      return Math.round(onVenus);
     }
 
-    expectedMars(old){
+    expectedMars(old) {
       let timeLeft = new Old(old);
-      let onMars = timeLeft.marsAlive(90) - timeLeft.marsAlive(old);
-      return Math.round(expectedMars);
+      let onMars = timeLeft.aliveOnMars(90) - timeLeft.aliveOnMars(old);
+      return Math.round(onMars);
     }
-    
+
     expectedJupiter(old){
     let timeLeft = new Old(old);
-    let onJupiter = timeLeft.jupiterAlive(90) - timeLeft.jupiterAlive(old);
-      return Math.round(expectedJupiter);
+    let onJupiter = timeLeft.aliveOnJupiter(90) - timeLeft.aliveOnJupiter(old);
+      return Math.round(onJupiter);
     }
 
 }
