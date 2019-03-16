@@ -30,7 +30,7 @@ $(document).ready(function() {
     let expectedJupiter = homeAge.expectedJupiter();
 
     $("#field").append("<li> On Earth you're " + yourAge + " years old</li>");
-    $("#field").append("<li> On Mercury you're " + mercuryAge + expectedMercury + " years old</li>");
+    $("#field").append("<li> On Mercury you're " + mercuryAge + " years old</li>");
     $("#field").append("<li> On Venus you're " + venusAge + " years old</li>");
     $("#field").append("<li> On Mars you're " + marsAge + " years old</li>");
     $("#field").append("<li> On Jupiter you're " + jupiterAge + " years old</li>");
