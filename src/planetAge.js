@@ -9,6 +9,11 @@ export class Old {
       return oldInSeconds;
     }
 
+    aliveOnEarth(old) {
+      const earthAlive = old;
+      return (earthAlive);
+    }
+
     aliveOnMercury(old) {
       const mercuryAlive = old / 0.24;
       return (mercuryAlive);
@@ -30,10 +35,11 @@ export class Old {
 
     }
 
-    // expectedHome(old){
-    //   let timeLeft = 90 - Old;
-    //   return timeleft;
-    // }
+    expectedHome(old){
+      let timeLeft = new Old(old)
+      let onEarth = timeLeft.aliveOnEarth(90);
+      return (onEarth);
+    }
 
     expectedMercury(old){
       let timeLeft =  new Old(old);

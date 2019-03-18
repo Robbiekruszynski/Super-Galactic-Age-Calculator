@@ -28,9 +28,9 @@ $(document).ready(function() {
     let expectedVenus = homeAge.expectedVenus(yourAge);
     let expectedMars = homeAge.expectedMars(yourAge);
     let expectedJupiter = homeAge.expectedJupiter(yourAge);
-    // let expectedHome = homeage.expectedHome(yourAge);
+    let expectedHome = homeAge.expectedHome(yourAge);
 
-    // $("#field").append("<li> On Earth you're " + yourAge + " and your expected age to die on Earth is when you're " + expectedHome + " years old</li>");
+    $("#field").append("<li> On Earth you're " + yourAge + " and your expected age to die on Earth is when you're " + expectedHome + " years old</li>");
 
     $("#field").append("<li> On Mercury you're " + mercuryAge + " and your expected age to die on Mercury is when you're " + expectedMercury + " years old</li>");
 

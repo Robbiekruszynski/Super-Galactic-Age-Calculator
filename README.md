@@ -6,42 +6,34 @@
 
 ## Description
 
-* _Application buildout that allows a user to complete a form, which then tell the user how old they are across a few separate planets_
+* _Application buildout that allows a user to complete a form, which then tell the user how old they are across a few separate planets along with projected life expectancy on each of those planets. _
 
 
 ## Specs
 * Input //
-User completes a form with their birthday
+User completes a form with their birthday year / month / day and clicks on the button to calculate age on Earth, Mercury, Venus, Mars, and Jupiter in that order.
 
+* Output //
+Returns their age in Earth years.
+Determines how many years a user has left to live on Earth.
 
 * Output //
 Returns their age in Mercury years. (A Mercury year is .24 Earth years.)
-* Goal
-Determines how many years a user has left to live on each planet.
-
-* Input //
-User completes a form with their age and selects Venus for their planet choice.
+Determines how many years a user has left to live on Mercury.
 
 * Output //
 Returns their age in Venus years. (A Venus year is .62 Earth years.)
-* Goal
-Determines how many years a user has left to live on each planet.
+Determines how many years a user has left to live on Venus
 
-* Input //
-User completes a form with their age and selects Mars for their planet choice.
 
 * Output //
 Returns their age in Mars years. (A Mars year is 1.88 Earth years.)
-* Goal
-Determines how many years a user has left to live on each planet.
+Determines how many years a user has left to live on Mars.
 
-* Input //
-User completes a form with their age and selects Jupiter for their planet choice.
 
 * Output //
 Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
-* Goal
-Determines how many years a user has left to live on each planet.
+Determines how many years a user has left to live on Jupiter.
 
 
 ### Setup/Installation Requirements
@@ -62,7 +54,7 @@ npm install (provided you are free of errors continue and run the next command)
 
 ## Known Bugs
 
-_As of March 15th 2019 there are no known bugs_
+_As of March 17th 2019 there are no known bugs_
 
 ## Support and contact details
 
