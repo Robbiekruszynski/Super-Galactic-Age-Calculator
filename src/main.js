@@ -24,15 +24,20 @@ $(document).ready(function() {
     let marsAge = Math.round(homeAge.aliveOnMars(yourAge));
     let jupiterAge = Math.round(homeAge.aliveOnJupiter(yourAge));
 
-    let expectedMercury = homeAge.expectedMercury();
-    let expectedVenus = homeAge.expectedVenus();
-    let expectedMars = homeAge.expectedMars();
-    let expectedJupiter = homeAge.expectedJupiter();
+    let expectedMercury = homeAge.expectedMercury(yourAge);
+    let expectedVenus = homeAge.expectedVenus(yourAge);
+    let expectedMars = homeAge.expectedMars(yourAge);
+    let expectedJupiter = homeAge.expectedJupiter(yourAge);
+    // let expectedHome = homeage.expectedHome(yourAge);
 
-    $("#field").append("<li> On Earth you're " + yourAge + " years old</li>");
-    $("#field").append("<li> On Mercury you're " + mercuryAge + " years old</li>");
-    $("#field").append("<li> On Venus you're " + venusAge + " years old</li>");
-    $("#field").append("<li> On Mars you're " + marsAge + " years old</li>");
-    $("#field").append("<li> On Jupiter you're " + jupiterAge + " years old</li>");
+    // $("#field").append("<li> On Earth you're " + yourAge + " and your expected age to die on Earth is when you're " + expectedHome + " years old</li>");
+
+    $("#field").append("<li> On Mercury you're " + mercuryAge + " and your expected age to die on Mercury is when you're " + expectedMercury + " years old</li>");
+
+    $("#field").append("<li> On Venus you're " + venusAge + " and your expected age to die on Venus is when you're " + expectedVenus + " years old</li>");
+
+    $("#field").append("<li> On Mars you're " + marsAge + " and your expected age to die on Mars is when you're " + expectedMars + " years old</li>");
+
+    $("#field").append("<li> On Jupiter you're " + jupiterAge + " and your expected age to die on Jupiter is when you're " + expectedJupiter + " years old</li>");
   });
 });

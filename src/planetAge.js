@@ -30,8 +30,8 @@ export class Old {
 
     }
 
-    // expectedEarth(old){
-    //   let timeLeft = 90 - old;
+    // expectedHome(old){
+    //   let timeLeft = 90 - Old;
     //   return timeleft;
     // }
 
