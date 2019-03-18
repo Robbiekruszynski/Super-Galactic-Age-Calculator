@@ -66,6 +66,8 @@ _Contact robbiekruszynski@gmail.com with questions and comments_
 * HTML
 * css
 * scss
+* JavaScript
+* Jquery
 * jasmine
 * karma
 * custom webpack with dependancies
