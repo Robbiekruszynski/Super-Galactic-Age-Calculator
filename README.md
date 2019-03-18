@@ -8,7 +8,7 @@
 
 * Application buildout that allows a user to complete a form, which then tell the user how old they are across a few separate planets along with projected life expectancy on each of those planets.
 
-(src/assets/images/screen1.png)
+![application example](src/assets/images/screen1.png)
 
 
 ## Specs
