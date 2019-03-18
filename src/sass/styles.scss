@@ -1,33 +1,47 @@
-body {
-  background-color: darkgrey;
-}
-h1 {
-  color: black;
+.jumbotron {
+  background-image: url(../assets/images/space.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  h1 {
+    color: white;
+  }
 }
 
 .formGrouping{
   text-align: center;
+  color: white;
 }
 p {
   text-align: center;
+  color: white;
 }
 h2 {
   text-align: center;
+  color: white;
 }
 
 h1 {
   text-align: center;
+  color: white;
 }
 
 .button {
+  margin-left: 20vw;
   margin-top: 10px;
-  margin-left: 27vw;
+
 }
 
 ul{
-  margin-top: 10px;
+
+margin-top: 30vh;
 text-align: center;
 list-style-type: none;
+color:white;
 
+}
 
+.body {
+  background-image: url(../assets/images/space.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
