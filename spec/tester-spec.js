@@ -43,18 +43,14 @@ it('should return the correct age for the user on jupiter after they enter their
 
 });
 
-it('should return the correct age for the user on jupiter after they enter their birthday', function() {
-  expect(jupiterAge).toEqual(2);
-
-  });
                                     ////  expected life tests
 
-  it('should return life expected for the user on mars after they enter their birthday', function() {
+  it('should return life expected for the user on mercury after they enter their birthday', function() {
     expect(expectedMercury).toEqual(254);
 
   });
 
-  it('should return life expected for the user on mars after they enter their birthday', function() {
+  it('should return life expected for the user on venus after they enter their birthday', function() {
     expect(expectedVenus).toEqual(98);
 
   });
@@ -64,12 +60,12 @@ it('should return the correct age for the user on jupiter after they enter their
 
   });
 
-  it('should return life expected for the user on mars after they enter their birthday', function() {
+  it('should return life expected for the user on jupiter after they enter their birthday', function() {
     expect(expectedJupiter).toEqual(5);
 
   });
 
-  it('should return life expected for the user on mars after they enter their birthday', function() {
+  it('should return life expected for the user on earth after they enter their birthday', function() {
     expect(expectedHome).toEqual(90);
 
   });
